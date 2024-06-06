@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "softskillratings",
+  "info": {
+    "singularName": "softskillrating",
+    "pluralName": "softskillratings",
+    "displayName": "Softskillrating"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "problemsolving": {
+      "type": "string"
+    },
+    "interpersonal": {
+      "type": "string"
+    },
+    "communication": {
+      "type": "string"
+    },
+    "leadership": {
+      "type": "string"
+    },
+    "mostimproved": {
+      "type": "string"
+    },
+    "teamwork": {
+      "type": "string"
+    },
+    "learners": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::learner.learner",
+      "mappedBy": "softskillratings"
+    }
+  }
+}

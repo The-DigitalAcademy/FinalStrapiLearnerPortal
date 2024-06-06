@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shaperreviews",
+  "info": {
+    "singularName": "shaperreview",
+    "pluralName": "shaperreviews",
+    "displayName": "Shaperreview"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "review": {
+      "type": "richtext"
+    },
+    "learners": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::learner.learner",
+      "mappedBy": "shaperreviews"
+    }
+  }
+}

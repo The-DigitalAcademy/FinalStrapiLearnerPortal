@@ -1,0 +1,196 @@
+{
+  "kind": "collectionType",
+  "collectionName": "learners",
+  "info": {
+    "singularName": "learner",
+    "pluralName": "learners",
+    "displayName": "Learner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "dob": {
+      "type": "date"
+    },
+    "southafrican": {
+      "type": "boolean"
+    },
+    "male": {
+      "type": "boolean"
+    },
+    "city": {
+      "type": "string"
+    },
+    "physicaladdress": {
+      "type": "richtext"
+    },
+    "postaladdress": {
+      "type": "richtext"
+    },
+    "homelanguage": {
+      "type": "string"
+    },
+    "highestqualification": {
+      "type": "string"
+    },
+    "nextofkin": {
+      "type": "string"
+    },
+    "postalcode": {
+      "type": "integer"
+    },
+    "currentlystudying": {
+      "type": "boolean"
+    },
+    "githublink": {
+      "type": "string"
+    },
+    "linkedinlink": {
+      "type": "string"
+    },
+    "previouscompany1": {
+      "type": "string"
+    },
+    "previouscompany2": {
+      "type": "string"
+    },
+    "company1position": {
+      "type": "string"
+    },
+    "company2position": {
+      "type": "string"
+    },
+    "termofcontractcompany1": {
+      "type": "integer"
+    },
+    "termofcontractcompany2": {
+      "type": "integer"
+    },
+    "keyresponsibilitiescompany1": {
+      "type": "richtext"
+    },
+    "keyresponsibilitiescompany2": {
+      "type": "richtext"
+    },
+    "Program": {
+      "type": "string"
+    },
+    "idnumber": {
+      "type": "string"
+    },
+    "phonenumber": {
+      "type": "string"
+    },
+    "nextofkinnumber": {
+      "type": "string"
+    },
+    "imageurl": {
+      "type": "string"
+    },
+    "communicationratingdescriptions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::communicationratingdescription.communicationratingdescription",
+      "mappedBy": "learners"
+    },
+    "interpersonalratingdescriptions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::interpersonalratingdescription.interpersonalratingdescription",
+      "mappedBy": "learners"
+    },
+    "leadershipratingdescriptions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::leadershipratingdescription.leadershipratingdescription",
+      "mappedBy": "learners"
+    },
+    "teamworkratingdescriptions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::teamworkratingdescription.teamworkratingdescription",
+      "inversedBy": "learners"
+    },
+    "problemsolvingratingdescriptions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::problemsolvingratingdescription.problemsolvingratingdescription",
+      "inversedBy": "learners"
+    },
+    "techskillsratingdescriptions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::techskillsratingdescription.techskillsratingdescription",
+      "inversedBy": "learners"
+    },
+    "responsibilities": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::responsibilitie.responsibilitie",
+      "inversedBy": "learners"
+    },
+    "cohorts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::cohort.cohort",
+      "inversedBy": "learners"
+    },
+    "teams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::team.team",
+      "inversedBy": "learners"
+    },
+    "shaperreviews": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::shaperreview.shaperreview",
+      "inversedBy": "learners"
+    },
+    "teamleaders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::teamleader.teamleader",
+      "inversedBy": "learners"
+    },
+    "softskilldescriptions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::softskilldescription.softskilldescription",
+      "inversedBy": "learners"
+    },
+    "softskillratings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::softskillrating.softskillrating",
+      "inversedBy": "learners"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "inversedBy": "learners"
+    },
+    "techskillratings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::techskillrating.techskillrating",
+      "inversedBy": "learners"
+    }
+  }
+}

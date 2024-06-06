@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interpersonalratingdescriptions",
+  "info": {
+    "singularName": "interpersonalratingdescription",
+    "pluralName": "interpersonalratingdescriptions",
+    "displayName": "Interpersonalratingdescription",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rating1": {
+      "type": "richtext"
+    },
+    "rating2": {
+      "type": "richtext"
+    },
+    "rating3": {
+      "type": "richtext"
+    },
+    "rating4": {
+      "type": "richtext"
+    },
+    "learners": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::learner.learner",
+      "inversedBy": "interpersonalratingdescriptions"
+    }
+  }
+}
